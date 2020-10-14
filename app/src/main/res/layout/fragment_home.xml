@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -32,35 +33,202 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:weightSum="4">
+        android:weightSum="4"
+        android:padding="10dp">
         <Button
 
-            android:drawableEnd="@drawable/ic_clothes"
+            android:background="@drawable/ic_clothe"
             android:layout_weight="1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-
-        </Button>
-        <Button
-            android:drawableEnd="@drawable/ic_jeans"
-            android:layout_weight="1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_width="30dp"
+            android:layout_height="45dp">
 
         </Button>
         <Button
-            android:drawableEnd="@drawable/ic_jacket"
+            android:background="@drawable/ic_jean"
             android:layout_weight="1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_width="30dp"
+            android:layout_height="45dp">
 
         </Button>
         <Button
-            android:drawableEnd="@drawable/ic_hoodie"
+            android:background="@drawable/ic_mens_hoodie"
             android:layout_weight="1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_width="30dp"
+            android:layout_height="45dp">
+
+        </Button>
+        <Button
+            android:background="@drawable/ic_cap"
+            android:layout_weight="1"
+            android:layout_width="30dp"
+            android:layout_height="45dp">
 
         </Button>
     </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp">
+        <TextView
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="@color/colorBlack"
+            android:gravity="center"
+            android:text="Áo"
+            android:layout_weight="1"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <TextView
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="@color/colorBlack"
+            android:gravity="center"
+            android:text="Quần"
+            android:layout_weight="1"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <TextView
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="@color/colorBlack"
+            android:gravity="center"
+            android:text="Hoodie"
+            android:layout_weight="1"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <TextView
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="@color/colorBlack"
+            android:gravity="center"
+            android:text="Nón"
+            android:layout_weight="1"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content">
+
+        </TextView>
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+            <LinearLayout
+                android:background="@drawable/shadow_item"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:gravity="center"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="20dp"
+                    android:text="Traditonal Tee Xanh"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </TextView>
+                <TextView
+                    android:gravity="center"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="20dp"
+                    android:text="299.999đ"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </TextView>
+                <ImageView
+
+                    android:src="@drawable/degrey"
+                    android:layout_width="300dp"
+                    android:layout_height="300dp">
+
+                </ImageView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:background="@drawable/shadow_item"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:gravity="center"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="20dp"
+                    android:text="Traditonal Tee Xanh"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </TextView>
+                <TextView
+                    android:gravity="center"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="20dp"
+                    android:text="299.999đ"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </TextView>
+                <ImageView
+
+                    android:src="@drawable/degrey"
+                    android:layout_width="300dp"
+                    android:layout_height="300dp">
+
+                </ImageView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:background="@drawable/shadow_item"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:gravity="center"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="20dp"
+                    android:text="Traditonal Tee Xanh"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </TextView>
+                <TextView
+                    android:gravity="center"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="20dp"
+                    android:text="299.999đ"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </TextView>
+                <ImageView
+
+                    android:src="@drawable/degrey"
+                    android:layout_width="300dp"
+                    android:layout_height="300dp">
+
+                </ImageView>
+            </LinearLayout>
+        </LinearLayout>
+    </HorizontalScrollView>
+
 </LinearLayout>
