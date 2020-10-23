@@ -39,13 +39,15 @@
                 android:layout_height="wrap_content">
             </Button>
             <Button
+                android:id="@+id/btnSignUpLogin"
                 android:layout_weight="2"
                 android:textSize="20dp"
                 android:textStyle="bold"
                 android:text="ĐĂNG KÝ"
                 android:background="@color/colorWhite"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:onClick="SignUp">
             </Button>
         </LinearLayout>
         <LinearLayout
@@ -90,7 +92,8 @@
                 android:text="Đăng nhập"
                 android:textSize="20dp"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"></Button>
+                android:layout_height="wrap_content"
+                android:onClick="ViewMain"></Button>
 
 
         </LinearLayout>
